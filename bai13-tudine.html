@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tudien</title>
+</head>
+<body>
+<input type="text" id="text" >
+<input type="button" id="dis" value="tran" onclick="tran()">
+<h1 id="kq"></h1>
+<script>
+let a=document.getElementById("kq");
+function tran(){
+    let te=document.getElementById("text").value;
+    let viet=["cho","meo","lon",];
+    let anh=["dog","cat","pig"];
+    for(let i=0;i<anh.length;i++){
+        if(te == anh[i]){
+            a.innerHTML= te + viet[i];
+        }
+    }
+}
+
+</script>
+</body>
+</html>
